@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,500');
+  
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+}
+
+.box{
+  padding: 15px;
+  height: 100vh;
+}
+
+
+/**
+    Styling for left Div flexbox
+*/
+
+.one{
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 35%;
+  background: #FFFFFF;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container{
+  justify-content: flex-start;
+  width:122px;
+  height: 43px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.content-container{
+  flex-wrap: wrap;
+  margin-bottom: 30%;
+}
+
+p{
+  font-size: 1.3em;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+#blue-text{
+  color: #6247B9;
+  margin-bottom: 0;
+}
+
+#grey-text{
+  color: #565656;
+  margin-top: 0;
+}
+
+#grey-light{
+  color: #BCBCBC;
+}
+
+#gradient-button{
+  border: none;
+  border-radius: 4%;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.07em;
+  background-image: linear-gradient(to right, #6151BD , #A873D0);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+/**
+  styling for the right Div Box
+*/
+
+.two{
+  width: 65%;
+}
+
+.gradient-background{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(97,81,189,0.7987570028011204) 0%, rgba(110,110,191,0.7371323529411764) 35%, rgba(168,115,208,0.7959558823529411) 100%), url(../img/Customer1_InVision.jpg) no-repeat center center;
+background-size: cover;
+}
+
+/**
+    Styling for navigation bar
+*/
+
+nav{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.01em;
+}
+
+nav ul{
+  display: flex;
+  flex: 1 1 0;
+  height: auto;
+  justify-content: space-around; 
+  list-style-type: none;
+  text-align: center;
+}
+
+nav a{
+  /**background: #565656;*/
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/**
+    signup button for navigation.
+*/
+nav button{
+  border: none;
+  font-size: 1.01em;
+  color: #FFFFFF;
+  height: 40px;
+  width: 100px;
+  border-radius: 4%;
+  cursor: pointer;
+  background: rgba(207, 181, 228, 0.6);
+}

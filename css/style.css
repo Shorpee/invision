@@ -117,12 +117,17 @@ nav ul{
   justify-content: space-around; 
   list-style-type: none;
   text-align: center;
+  margin-top: 0px;
 }
 
 nav a{
   /**background: #565656;*/
   text-decoration: none;
   color: #FFFFFF;
+}
+
+nav li{
+  margin-top: 7px;
 }
 
 /**
@@ -137,4 +142,5 @@ nav button{
   border-radius: 4%;
   cursor: pointer;
   background: rgba(207, 181, 228, 0.6);
+  margin-top: 0px;
 }

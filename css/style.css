@@ -144,3 +144,14 @@ nav button{
   background: rgba(207, 181, 228, 0.6);
   margin-top: 0px;
 }
+
+/**
+    Style for play button
+*/
+.fa-play-circle{
+  display: block;
+  color: #FFFFFF;
+  font-size: 5em;
+  cursor: pointer;
+  justify-self: center;
+}

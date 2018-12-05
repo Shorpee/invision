@@ -3,6 +3,7 @@
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 .wrapper{
@@ -73,9 +74,13 @@ h1{
   color: #BCBCBC;
 }
 
+/**
+    Styling for the gradient "GET STARTED" button.
+*/
+
 #gradient-button{
   border: none;
-  border-radius: 4%;
+  border-radius: 3%;
   margin-top: 35px;
   margin-bottom: 15px;
   width: 150px;
@@ -84,6 +89,10 @@ h1{
   background-image: linear-gradient(to right, #6151BD , #A873D0);
   color: #FFFFFF;
   cursor: pointer;
+}
+
+#gradient-button:hover{
+  box-shadow: 0px 6px 10px #BCBCBC;
 }
 
 
@@ -130,8 +139,22 @@ nav li{
   margin-top: 7px;
 }
 
+.nav-links::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFFFFF;
+  transition: width .3s;
+}
+
+.nav-links:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
 /**
-    signup button for navigation.
+    signup button on navigation bar.
 */
 nav button{
   border: none;
@@ -145,13 +168,25 @@ nav button{
   margin-top: 0px;
 }
 
+nav button:hover{
+  background-color: #FFFFFF;
+  color: #6151BD;
+}
+
 /**
-    Style for play button
+    Styling for play button.
 */
 .fa-play-circle{
-  display: block;
   color: #FFFFFF;
   font-size: 5em;
-  cursor: pointer;
-  justify-self: center;
+  cursor: pointer; 
+}
+
+/**
+    This class centers the play button in the middle of the div.
+*/
+.center{
+  position: absolute;
+  top: 45%;
+  left: 60%;
 }
